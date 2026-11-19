@@ -146,31 +146,15 @@ The waveform should agree with the operation table.
 The 4-bit SIPO Shift Register was realized using Verilog HDL, with the characteristic behaviour:
 
 Q(next) = {Q[2:0], sin}
+<img width="1920" height="1020" alt="Screenshot 2026-11-16 231443" src="https://github.com/user-attachments/assets/25089d7f-c79d-4d39-9750-0dc04a70aa10" />
 
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected operation table.
 
 ## Output
-<img width="591" height="181" alt="image" src="https://github.com/user-attachments/assets/f27135f4-6a61-4a44-a099-9be11f7cd54b" />
+<img width="1920" height="1020" alt="Screenshot 2026-11-16 231601" src="https://github.com/user-attachments/assets/ca7195a2-21c6-481d-bf21-84cbbacbbe16" />
 
-## Viva-Voce Questions
 
-●	What is a shift register, and what are its four basic types (SISO, SIPO, PISO, PIPO)?
 
-●	How does a SIPO shift register differ from a PISO shift register?
-
-●	How many clock pulses are required to fully load a 4-bit SIPO shift register with serial data?
-
-●	How would you modify the design to shift right instead of left?
-
-●	How would you convert this SIPO register into a Serial-In Serial-Out (SISO) register?
-
-●	What is the purpose of the asynchronous reset in this design?
-
-●	Why is a VCD file generated, and what does $dumpvars(0, tb) do?
-
-●	How can a shift register be used to implement a ring counter or Johnson counter?
-
-●	What is the difference between a shift register built from D flip-flops versus one described behaviourally in Verilog, in terms of simulation versus synthesis?
 
 ## Result
 
